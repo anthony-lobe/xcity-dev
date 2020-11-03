@@ -4,6 +4,8 @@
     {
         $email = $_POST['email'];
         $pass = $_POST['pass'];
+
+        echo $email;
         
         $db = new PDO('mysql:host=localhost;dbname=xcitydb', 'root', '');
 
@@ -22,7 +24,6 @@
             $req = $db->prepare($sql);
             $req->execute();
             echo "enregistrement terminé";
-
         }
     }
 
