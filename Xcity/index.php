@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -38,7 +35,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
     <!------------------ NAVBAR ------------------------>
-    <header class="justify-content-center">       
+    <header class="justify-content-center page-scroll">       
         <div class="topnav navbar-dark bg-dark nav-pills" id="myTopnav">
             <a href="#home" class="active">Xcity</a>
             <a href="#sante">SANTE</a>
@@ -49,16 +46,65 @@
             </a>                        
         </div>
     </header>   
-    <!------------------ BODY ------------------------>
+    <!------------------ SLIDER IMAGE ------------------------>
     <div id="slider" style='height: 40%; width: 100%; margin:0 auto;'>
-  <figure>
-    <img style='height: 100%; width: 100%; object-fit: contain' src="img/orange.jpeg" alt>
-    <img style='height: 100%; width: 100%; object-fit: contain' src="img/volcan.jpeg" alt>
-    <img style='height: 100%; width: 100%; object-fit: contain' src="img/planete.jpeg" alt>
-    <img style='height: 100%; width: 100%; object-fit: contain' src="img/volcan.jpeg" alt>
-    <img style='height: 100%; width: 100%; object-fit: contain' src="img/planete.jpeg" alt>
-  </figure>
+        <figure>
+            <img style='height: 100%; width: 100%; object-fit: contain' src="img/orange.jpeg" alt>
+            <img style='height: 100%; width: 100%; object-fit: contain' src="img/volcan.jpeg" alt>
+            <img style='height: 100%; width: 100%; object-fit: contain' src="img/planete.jpeg" alt>
+            <img style='height: 100%; width: 100%; object-fit: contain' src="img/volcan.jpeg" alt>
+            <img style='height: 100%; width: 100%; object-fit: contain' src="img/planete.jpeg" alt>
+        </figure>
+    </div>
+
+<!------------------ SPONSORS ------------------------>
+
+<div title="Click to flip" class="sponsor">
+    <div class="sponsorFlip">
+        <img alt="More about google" src="img/Sponsors/casino.png">
+        
+    </div>
+
+    
 </div>
+<?php
+$sponsors = array(
+    array('auchan','The biggest social..','http://www.facebook.com/'),
+    array('leclerc','The leading software de..','http://www.adobe.com/'),
+    array('intermarche','One of the top software c..','http://www.microsoft.com/'),
+    array('carrefour','A global multibillion electronics..','http://www.sony.com/'),
+    array('casino','One of the biggest computer develo..','http://www.dell.com/'),
+    array('match','The biggest online auction and..','http://www.ebay.com/'),
+ 
+);
+
+// Randomizing the order of sponsors:
+
+shuffle($sponsors);
+
+// Looping through the array:
+
+foreach($sponsors as $company)
+{
+    echo'
+        <div class="sponsor" title="Click to flip">
+            <div class="sponsorFlip">
+                <img src="img/Sponsors/'.$company[0].'.png" alt="More about '.$company[0].'" />
+            </div>
+
+            <div class="sponsorData">
+                <div class="sponsorDescription">
+                    '.$company[1].'
+                </div>
+                <div class="sponsorURL">
+                    <a href="'.$company[2].'">'.$company[2].'</a>
+                </div>
+            </div>
+        </div>
+
+    ';
+}
+?>
 
 
 <!------------------ FOOTER ------------------------>
@@ -68,7 +114,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <h6>About</h6>
-            <p class="text-justify">Xcity est une plateforme communautaire , qui intervient dans l'amelioration des condtions de vie. Aussi bien dans le secteur <i>medical , immobilier </i> et meme <i>environnemental . </i>  </p>
+            <p class="text-justify">Xcity est une plateforme communautaire , qui intervient dans l'amélioration des condtions de vie. Aussi bien dans le secteur <i>medical , immobilier </i> et meme <i>environnemental . </i>  </p>
           </div>
 
           <div class="col-xs-6 col-md-3">
