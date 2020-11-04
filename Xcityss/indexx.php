@@ -25,9 +25,37 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="cssx/util.css">
 	<link rel="stylesheet" type="text/css" href="cssx/main.css">
+
+	<!-- CSS link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <!-- Semantic UI  -->
+        <link rel="stylesheet" type="text/css" href="SemanticUI/semantic.min.css">
+        <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+        <script src="semantic/dist/semantic.min.js"></script>
+    
+    <!-- Javascript link  -->
+        <script src="js/index.js"></script>
+
+    <!-- Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="css/animate.css" rel="stylesheet" />
+  
+    <!-- Squad theme CSS -->
+        <link href="color/default.css" rel="stylesheet">
 </head>
 <body>
-	
+	<!------------------ NAVBAR ------------------------>
+    <?php include("header.php"); ?>
+
+
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
@@ -66,9 +94,14 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-					<button type="submit" name="signup" class="login100-form-btn" id="submit">
+					<button type="submit" name="signup" class="login100-form-btn" id="connexion">
 							Login
-						</button>
+					</button>
+					<script type="text/javascript">
+						document.getElementById("connexion").onclick = function () {
+							location.href = "index.php";
+						};
+              		</script>
 					</div>
 				</form>
 			</div>
@@ -91,6 +124,10 @@
 	<script src="vendorx/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="jsx/main.js"></script>
+
+<!------------------ FOOTER ------------------------>
+<?php include("footer.php"); ?>
+
 
 </body>
 </html>

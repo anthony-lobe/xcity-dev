@@ -135,7 +135,7 @@ body {
   #footer {
     position: absolute;
     left: 0;
-    bottom: -100%;
+    bottom: auto;
     width: 100%;
     color: white;
     text-align: center;
