@@ -1,4 +1,4 @@
-<header class="justify-content-center page-scroll">       
+<header class="justify-content-center page-scroll" style="font-family: Poppins-Regular;">       
         <div class="topnav navbar-dark bg-dark nav-pills" id="myTopnav">
             <a href="#home" class="active" id="home">Xcity</a>
             <script type="text/javascript">
