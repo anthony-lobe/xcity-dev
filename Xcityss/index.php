@@ -37,18 +37,55 @@
     <!------------------ NAVBAR ------------------------>
     <?php include("header.php"); ?>
     <!------------------ SLIDER IMAGE ------------------------>
-    <div class="slider">
-        <div class="slides">
-           <div class="slide"><img src="img/volcan.jpeg" /></div>
-           <div class="slide"><img src="img/orange.jpeg" /></div>
-           <div class="slide"><img src="img/planete.jpeg" /></div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-image:url(./1.jpg);">
+
+      <div class="container">
+        <div class="carousel-caption text-left">
+          <!------------------------------>
         </div>
-
-
+      </div>
     </div>
+    <div class="carousel-item" style="background-image:url(img/team/2.jpg);">
 
-<?php include("content.php"); ?>
+      <div class="container">
+        <div class="carousel-caption">
+          <!------------------------------>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
 
+      <div class="container">
+        <div class="carousel-caption text-right">
+          <!------------------------------>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <!------------------ FOOTER ------------------------>
 <?php include("footer.php"); ?>
 </body>
