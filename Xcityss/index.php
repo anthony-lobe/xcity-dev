@@ -43,10 +43,11 @@
            <div class="slide"><img src="img/orange.jpeg" /></div>
            <div class="slide"><img src="img/planete.jpeg" /></div>
         </div>
+
+
     </div>
 
-<!------------------ SPONSORS ------------------------>
-
+<?php include("content.php"); ?>
 
 <!------------------ FOOTER ------------------------>
 <?php include("footer.php"); ?>
