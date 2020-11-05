@@ -45,7 +45,7 @@
     <li data-target="#myCarousel" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item active" style="background-image:url(./1.jpg);">
+    <div class="carousel-item active" style="background-image:url(./Arrière-plan.png);">
 
       <div class="container">
         <div class="carousel-caption text-left">
@@ -81,6 +81,7 @@
   </a>
 </div>
 
+<?php include("content.php"); ?>
 
 
 
