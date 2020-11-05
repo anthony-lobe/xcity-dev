@@ -99,7 +99,7 @@
 					</button>
 					<script type="text/javascript">
 						document.getElementById("connexion").onclick = function () {
-							location.href = "indexx.php";
+							location.href = "index.php";
 						};
               		</script>
 					</div>
