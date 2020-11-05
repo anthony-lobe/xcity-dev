@@ -305,49 +305,34 @@ body {
 }
 /* ------------------- CARROUSEL --------------- */
 
- div#slider { 
-     width: 100px; 
-     height: 40%;
-     max-width: 1000px; 
-    } 
+.slider {
+  width : 225px;
+  height: 168px;
+  overflow: hidden;
+  margin: 150px auto;
+}
 
- div#slider figure {
-    position: relative; 
-    width: 500%;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-    text-align: left;
+.slides {
+  width : calc(225px * 2);
+  animation: glisse 5s infinite;
+}
+.slide {
+  float: left;
+}
+
+@keyframes glisse {
+  0%{
+    transform: translateX(0)
   }
+  33%{
+    transform: translateX(-225px)
+  }
+  66%{
+    transform: translateX(-500px)
+  }
+  100%{
+    transform: translateX(0)
+  }
+}
 
-  div#slider figure img { 
-      width: 20%; 
-      height: auto; 
-      float: left; 
-    }
-
-    div#slider { width: 80%; max-width: 1000px; overflow: hidden }
-
-    @keyframes slidy {
-        0% { left: 0%; }
-        20% { left: 0%; }
-        25% { left: -100%; }
-        45% { left: -100%; }
-        50% { left: -200%; }
-        70% { left: -200%; }
-        75% { left: -300%; }
-        95% { left: -300%; }
-        100% { left: -400%; }
-      }
-
-      div#slider figure {
-        position: relative;
-        width: 500%;
-        margin: 0;
-        padding: 0;
-        font-size: 0;
-        left: 0;
-        text-align: left;
-        animation: 30s slidy infinite;
-      }
 
