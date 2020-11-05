@@ -4,7 +4,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <h6>About</h6>
-            <p class="text-justify"> Xcity est une plateforme communautaire , dont le but est l'amélioration des conditions de vie dans votre ville. Son champ d'action vise aussi bien le secteur médical , qu'immobilier ou environnemental.</p>
+            <p class="text-justify">Xcity est une plateforme communautaire , qui intervient dans l'amélioration des condtions de vie. Aussi bien dans le secteur <i>medical , immobilier </i> et meme <i>environnemental . </i>  </p>
           </div>
 
           <div class="col-xs-6 col-md-3">
