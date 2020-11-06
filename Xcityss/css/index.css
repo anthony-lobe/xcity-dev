@@ -8,7 +8,11 @@ html{
   padding: 0;
   color: #d9d9d9;
   box-sizing: border-box;
+<<<<<<< HEAD:Xcitys/css/index.css
   font-family: Poppins-Regular;
+=======
+  font-family: 'Poppins', sans-serif;
+>>>>>>> 847b06cbcbac9d2eeb353d731898588463db4f6c:Xcityss/css/index.css
 }
 .content1{
   position: relative;
