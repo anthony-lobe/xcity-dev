@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-	<title>Login V15</title>
+	<title>Xcity</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -59,7 +59,7 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-form-title" style="background-image: url(imagesx/bg-01.jpg);">
+				<div class="login100-form-title" style="background-image: url(Arrière-plan.png);">
 					<span class="login100-form-title-1">
 						Sign In
 					</span>
